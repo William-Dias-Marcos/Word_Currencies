@@ -33,13 +33,12 @@ const url = "https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,BTC-BRL"
     function dolarBR (){
             
         let brDolar = document.getElementById("brDolar").value
+        
         let usd = document.getElementById("usd").innerText
+        let Usd = usd.substring(3,1000)
+        let resUsd = parseFloat(Usd.replace(",", "."))
 
-        Usd = usd.substring(3,1000)
-
-        resUsd = parseFloat(Usd.replace(",", "."))
-
-        result = resUsd * brDolar
+        let result = resUsd * brDolar
     
         document.getElementById("brlDolar").innerText = `R$ ${Number(result).toLocaleString("pt-BR", {
             minimumFractionDigits: 2,  
@@ -48,5 +47,38 @@ const url = "https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,BTC-BRL"
 
     }
 
+    // calcular euro
 
+    function euroBR (){
+            
+        let brEur = document.getElementById("brEur").value
+        
+        let eur = document.getElementById("eur").innerText
+        let euro = eur.substring(3,1000)
+        let resEur = parseFloat(euro.replace(",", "."))
 
+        let result = resEur * brEur
+    
+        document.getElementById("brlEur").innerText = `R$ ${Number(result).toLocaleString("pt-BR", {
+            minimumFractionDigits: 2,  
+            maximumFractionDigits: 2
+         })}`
+
+    }
+
+    // calcular bitcoin
+
+    function bitcoinBR (){
+            
+        let brBtc = document.getElementById("brBtc").value
+        
+        let btc = document.getElementById("btc").innerText
+        let Btc = btc.substring(3,1000)
+        let resBtc = parseFloat(Btc.replace(",", "."))
+
+        let result = resBtc * brBtc
+
+        document.getElementById("brlBtc").innerText = `R$ ${Number(result).toFixed(3)},00`
+
+    }
+  
