@@ -80,5 +80,5 @@ const url = "https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,BTC-BRL"
 
         document.getElementById("brlBtc").innerText = `R$ ${Number(result).toFixed(3)},00`
 
-    }
+    } 
   
