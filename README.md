@@ -1,4 +1,4 @@
-<h1 align="center"> Word Currencies (Em desenvolvimento ❗️) </h1>
+<h1 align="center"> Word Currencies </h1>
 
 ## 💻 Sobre o projeto
 
@@ -18,9 +18,10 @@ https://gifted-ride-f4de9d.netlify.app/
 
 ## 📱 Layout da Aplicação
 
-<p text  align="center">
-  Em desenvolvimento
+ <p text  align="center">
+<img img width= "700" src= "https://github.com/William-Dias-Marcos/Word_Currencies/blob/master/to_readme/gif.gif"> 
 </p>
+
 
 
 ---
