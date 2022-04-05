@@ -3,26 +3,27 @@ const url = "https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,BTC-BRL"
     fetch(url).then((res) => {
 
         return res.json()
-
     })
+
     .then((data) => {
 
+        console.log(data)
         // dólar
-        let USD = data.USDBRL.ask
+        let USD = data.USD.ask
         document.getElementById("usd").innerHTML = `R$ ${Number(USD).toLocaleString("pt-BR", {
             minimumFractionDigits: 2,  
             maximumFractionDigits: 2
          })}`
 
         // euro
-        let EUR = data.EURBRL.ask
+        let EUR = data.EUR.ask
         document.getElementById("eur").innerHTML = `R$ ${Number(EUR).toLocaleString("pt-BR", {
             minimumFractionDigits: 2,  
             maximumFractionDigits: 2
          })}`
 
         // bitcoin
-        let BTC = data.BTCBRL.ask
+        let BTC = data.BTC.ask
         document.getElementById("btc").innerHTML = `R$ ${Number(BTC).toFixed(3)},00`
 
     
