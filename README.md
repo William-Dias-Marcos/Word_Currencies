@@ -4,7 +4,7 @@
 
 💵 Word Currencies é um conversor de moedas online.
 
-https://gifted-ride-f4de9d.netlify.app/
+https://wordcurrencies.netlify.app/
 
 ---
 
