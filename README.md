@@ -10,7 +10,7 @@ https://wordcurrencies.netlify.app/
 
 ## ⚙️ Funcionalidades
 
-- [x] Tabela para consultar as pricipais moedas mundiais:
+- [x] Tabela para consultar as principais moedas mundiais:
 - [x] Permite fazer a conversão de moedas:
 - [x] Disponível para todos os dispositivos:
 
